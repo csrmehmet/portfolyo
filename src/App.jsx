@@ -1,8 +1,4 @@
-// App.jsx
-
 import { useSelector } from 'react-redux';
-
-
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -14,15 +10,17 @@ function App() {
   const darkMode = useSelector(state => state.theme.darkMode);
 
   return (
-    <div className={`App ${darkMode ? 'dark' : 'light'}`}>
-      <Header />
-      <main>
-        <Hero />
-        <Skills />
-        <Projects />
-        <Profile />
-      </main>
-      <Footer />
+    <div className={`${darkMode ? 'dark' : ''}`}>
+      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+        <Header />
+        <main>
+          <Hero />
+          <Skills />
+          <Projects />
+          <Profile />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

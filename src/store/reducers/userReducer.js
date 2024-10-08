@@ -1,6 +1,6 @@
 
 import { mockData } from "../../data/MockData";
-const initialState = mockData.personalInfo || { name: '' };
+const initialState = mockData.personalInfo;
 
 const userReducer = (state=initialState,action) =>{
     switch(action.type){

@@ -1,8 +1,10 @@
 
+import { translations } from "../../data/MockData";
 import { SET_LANGUAGE } from "../actions/actions";
 
 const initialState={
     currentLanguage:"en",
+    translations:translations
 };
 
 const languageReducer = (state=initialState,action)=>{

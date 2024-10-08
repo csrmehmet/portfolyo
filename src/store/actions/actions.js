@@ -6,6 +6,7 @@ export const toggleTheme=()=>({
 })
 
 
-export const setLanguage = ()=>({
+export const setLanguage = (language)=>({
     type:SET_LANGUAGE,
+    payload:language
 })
