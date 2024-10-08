@@ -13,12 +13,10 @@ function App() {
     <div className={`${darkMode ? 'dark' : ''}`}>
       <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <Header />
-        <main>
-          <Hero />
-          <Skills />
-          <Projects />
-          <Profile />
-        </main>
+        <Hero />
+        <Skills />
+        <Projects />
+        <Profile />
         <Footer />
       </div>
     </div>
