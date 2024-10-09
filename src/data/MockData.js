@@ -10,7 +10,7 @@ export const mockData = {
         birthDate: "10.12.1997",
         city: "Adana",
         education: {
-          university: "Mersin aUniversity",
+          university: "Mersin University",
           department: "Computer Engineering",
           degree: "Bachelor's",
           graduationYear: "2024"
@@ -25,9 +25,9 @@ export const mockData = {
       ]
     },
     skills: [
-      { name: "JavaScript", level: "Advanced" },
-      { name: "React.js", level: "Advanced" },
-      { name: "Node.js", level: "Intermediate" },
+      { name: "JavaScript", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+      { name: "React.js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+      { name: "Node.js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
     ],
     projects: [
       {

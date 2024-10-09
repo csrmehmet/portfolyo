@@ -1,8 +1,10 @@
+
 import { mockData } from "../../data/MockData";
 
 const initialState = {
   ...mockData.personalInfo,
-  socialLinks: mockData.socialLinks
+  socialLinks: mockData.socialLinks,
+  skills:mockData.skills
 };
 
 const userReducer = (state = initialState, action) => {
