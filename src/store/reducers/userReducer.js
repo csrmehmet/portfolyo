@@ -5,7 +5,7 @@ const initialState = {
   ...mockData.personalInfo,
   socialLinks: mockData.socialLinks,
   skills:mockData.skills,
-  aboutMe: mockData.aboutMe
+  aboutMe: mockData.aboutMe,
 
 };
 

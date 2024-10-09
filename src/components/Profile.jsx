@@ -1,9 +1,7 @@
 import { useSelector } from 'react-redux';
 
 function Profile() {
-  const personalInfo = useSelector(state => state.user);
-  const profile = personalInfo.profile;
-  const aboutMe = personalInfo.aboutMe;
+  const { profile, aboutMe } = useSelector(state => state.user);
 
   return (
     <section className="profile container mx-auto px-24 py-16">
@@ -12,23 +10,23 @@ function Profile() {
         <div className="profile-details md:w-1/2">
           <h3 className="text-2xl font-semibold mb-4 text-indigo-600 dark:text-indigo-400">Profile</h3>
           <div className="mb-2">
-            <span className="font-medium text-gray-700 dark:text-gray-300">Doğum tarihi:</span>
-            <span className="ml-2 text-gray-600 dark:text-gray-400">{profile.birthDate}</span>
+            <span className="font-medium text-gray-700 dark:text-gray-300">{profile.birthDate.label}:</span>
+            <span className="ml-2 text-gray-600 dark:text-gray-400">{profile.birthDate.value}</span>
           </div>
           <div className="mb-2">
-            <span className="font-medium text-gray-700 dark:text-gray-300">İkamet Şehri:</span>
-            <span className="ml-2 text-gray-600 dark:text-gray-400">{profile.city}</span>
+            <span className="font-medium text-gray-700 dark:text-gray-300">{profile.city.label}:</span>
+            <span className="ml-2 text-gray-600 dark:text-gray-400">{profile.city.value}</span>
           </div>
           <div className="mb-2">
-            <span className="font-medium text-gray-700 dark:text-gray-300">Eğitim Durumu:</span>
+            <span className="font-medium text-gray-700 dark:text-gray-300">{profile.education.label}:</span>
             <span className="ml-2 text-gray-600 dark:text-gray-400">
               {profile.education.university} {profile.education.department}<br />
               {profile.education.degree}, {profile.education.graduationYear}
             </span>
           </div>
           <div className="mb-2">
-            <span className="font-medium text-gray-700 dark:text-gray-300">Tercih Ettiği Rol:</span>
-            <span className="ml-2 text-gray-600 dark:text-gray-400">{profile.preferredRole}</span>
+            <span className="font-medium text-gray-700 dark:text-gray-300">{profile.preferredRole.label}:</span>
+            <span className="ml-2 text-gray-600 dark:text-gray-400">{profile.preferredRole.value}</span>
           </div>
         </div>
         <div className="about-me md:w-1/2">
