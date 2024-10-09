@@ -5,6 +5,7 @@ function Skills() {
   const skills = useSelector(state => state.user.skills);
 
   
+  
 
   return (
     <section className="skills container mx-auto px-24 py-16">
